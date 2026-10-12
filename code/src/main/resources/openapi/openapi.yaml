@@ -1,0 +1,18 @@
+openapi: 3.0.3
+info:
+  title: Template Service API
+  version: 1.0.0
+  description: Microservicio base de plantilla con métricas y documentación OpenAPI.
+paths:
+  /hola:
+    get:
+      summary: Endpoint de saludo
+      operationId: obtenerHola
+      responses:
+        '200':
+          description: Respuesta exitosa
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: "Hola"
